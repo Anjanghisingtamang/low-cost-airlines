@@ -1,0 +1,171 @@
+/* src/components/WelcomePage.css */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .welcome-page {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .welcome-heading {
+    text-align: center;
+    color: white;
+    font-size: 38px;
+  }
+  
+  .welcome-paragraph {
+    text-align: center;
+    color: white;
+    font-size: 28px; /* Adjusted font size */
+  }
+  
+  .header,
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    font-size: larger;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #fff;
+  }
+  
+  .logo {
+    height: 80px;
+  }
+  
+  .auth-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .auth-link {
+    text-decoration: none;
+    color: #fff;
+    transition: font-size 0.3s ease;
+  }
+  
+  .auth-link:hover {
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  .content-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1000px;
+  }
+  
+  .search-flights,
+  .package-deals {
+    flex: 1;
+  }
+  
+  .search-flights h2,
+  .package-deals h2 {
+    color: #0056b3;
+  }
+  
+  .search-flights form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .input-group input {
+    flex: 1;
+  }
+  
+  .search-flights input,
+  .search-flights select,
+  .search-flights button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .search-flights button {
+    padding: 8px 20px;
+    border-radius: 5px;
+    background-color: #ff7f00;
+    color: white;
+    border: none;
+    align-self: flex-end;
+    width: fit-content;
+  }
+  
+  .search-flights button:hover {
+    background-color: #ff6600;
+  }
+  
+  .package-deals p {
+    margin: 20px 0;
+  }
+  
+  .package-link {
+    color: #ff7f00;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .package-link:hover {
+    text-decoration: underline;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  .search-flights p {
+    margin: 0 auto;
+  }
+  
+  /* Mobile view adjustments */
+  @media (max-width: 768px) {
+    .header,
+    .footer {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+    }
+  
+    .auth-links {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .content {
+      flex-direction: column;
+      width: 90%;
+    }
+    
+    .dropdown-container {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

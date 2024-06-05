@@ -1,0 +1,187 @@
+/* SeatPage.css */
+
+.seat-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(227 213 213 / 50%);
+}
+
+.logo {
+    height: 50px;
+}
+
+.auth-links {
+    display: flex;
+    align-items: center;
+}
+
+.auth-link {
+    margin-left: 20px;
+    padding: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #000;
+}
+
+.auth-link:hover {
+    text-decoration: none;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.user-info span {
+    margin-left: 5px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.book-seat {
+    background-color:rgb(255 255 255 / 40%);
+    padding: 30px;
+    border-radius: 10px;
+    width: 40%;
+    max-width: 400px;
+}
+
+.book-seat h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.book-seat ul {
+    padding: 0;
+    list-style: none;
+    border: 1px solid #ddd; /* Add a border to the ul element */
+    border-radius: 10px;
+    overflow: hidden; /* Ensure child elements stay within the border */
+}
+
+.book-seat ul li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Add a bottom border to each li element */
+}
+
+.book-seat ul li:last-child {
+    border-bottom: none; /* Remove the bottom border from the last li element */
+}
+
+.book-seat ul li div {
+    margin-bottom: 10px;
+}
+
+.book-seat ul li input[type="text"],
+.book-seat ul li input[type="number"] {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.book-seat ul li label {
+    display: block;
+    margin-bottom: 10px;
+}
+.seat-row {
+    display: flex;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.book-seat button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #428409;
+}
+
+.book-seat button:hover {
+    background-color: #27b300 !important;
+}
+
+.seat-map {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seat-map h2 {
+    margin-bottom: 20px;
+}
+
+.seats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.seat-row {
+    display: flex;
+    gap: 10px;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    background-color: #af0c0c;
+}
+
+.seat.economy {
+    background-color: #00ffe5; /* Light blue for economy class */
+}
+
+.seat.business {
+    background-color: #f9c117; /* Orange for business class */
+}
+
+.seat.first {
+    background-color: #009dff; /* Red for first class */
+}
+
+.seat.selected {
+    border: 2px solid #000;
+    box-shadow: 0 0 10px #000;
+}
+
+.seat:disabled {
+    background-color: #ec0c0c; /* Gray for unavailable seats */
+    cursor: not-allowed;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgb(227 213 213 / 50%);
+}
+
+.seat.selected {
+    border: 5px solid #f42222;
+    box-shadow: 0 0 10px #000;
+}
