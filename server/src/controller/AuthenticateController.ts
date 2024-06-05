@@ -42,11 +42,11 @@ export class AuthenticationsController {
             let userService = new UserService(context);
             let users = await userService.getUserDetail(userName);
 
-            if (addedUsertype.usertypeid != users[0].usertypeid) {
-                console.log('UserType doesnot matched');
-                errorMessage = await common.GetErrorMessage(400, `Please Use correct User Type!!`);
-                return res.status(400).send({ message: errorMessage });
-            }
+            // if (addedUsertype.usertypeid != users[0].usertypeid) {
+            //     console.log('UserType doesnot matched');
+            //     errorMessage = await common.GetErrorMessage(400, `Please Use correct User Type!!`);
+            //     return res.status(400).send({ message: errorMessage });
+            // }
 
             if (users && users.length > 1) {
                 let retryData: any = await userService.CheckSuspended(users[0].userid);
